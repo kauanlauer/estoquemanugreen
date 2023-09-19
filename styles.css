@@ -1,0 +1,71 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff; /* Fundo branco */
+    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
+}
+
+header {
+    background-color: rgba(0, 114, 145, 0.8); /* Cor de fundo do menu lateral com 70% de opacidade */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.menu-button {
+    background-color: transparent; /* Botão sem fundo */
+    border: none; /* Remove a borda */
+    cursor: pointer;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #fff; /* Cor do ícone do menu */
+}
+
+.logo img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+.menu {
+    background-color: rgba(0, 114, 145, 0.9); /* Cor de fundo do menu lateral com 70% de opacidade */
+    color: #fff; /* Cor do texto no menu */
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido */
+    transition: left 0.3s ease-in-out;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #444; /* Cor de fundo ao passar o mouse */
+}
+
+.main {
+    margin-left: 250px; /* Deixe espaço para o menu lateral */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
