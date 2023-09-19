@@ -106,4 +106,21 @@ table {
   tr:hover {
     background-color: #ddd;
   }
-  
+  /* Estilos para tornar a tabela responsiva */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
