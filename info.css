@@ -139,10 +139,41 @@ h1 {
     color: #007190; /* Cor azul */
     margin-bottom: 10px;
 }
+.info-card {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/* Estilo para cada cartão de informação */
+.info-card {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Adicione a transição para a transformação */
+}
+
+/* Estilo para os títulos dos materiais */
+.info-card strong {
+    font-size: 18px;
+    color: #007190; /* Cor azul */
+    margin-bottom: 10px;
+}
 
 /* Estilo para as informações sobre os materiais */
 .info-card p {
     margin: 5px 0;
     font-size: 16px;
-    color: #333; /* Cor de texto padrão */
+    color: #000000; /* Cor de texto padrão */
 }
+
+/* Adicione a transformação ao passar o mouse */
+.info-card:hover {
+    transform: scale(1.01); /* Aumente ligeiramente de tamanho */
+}
+
+
+
+
+
+
