@@ -16,7 +16,23 @@ menuButton.addEventListener('click', () => {
     menuOpen = !menuOpen; // Inverte o estado do menu
 });
 
-// Função para ativar o modo Android e forçar a orientação paisagem
+// Função para ativar o modo Android
+function enableAndroidMode() {
+    // Coloque aqui o código para ativar o modo Android
+    alert('Modo Android ativado');
+    
+    // Verificar se estamos em um dispositivo Android
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    if (isAndroid) {
+        // Ativar a orientação retrato se estiver no modo Android
+        screen.orientation.lock('portrait').catch(error => {
+            console.error('Erro ao definir a orientação:', error);
+        });
+    }
+}
+
+// Função para ativar o modo Android
 function enableAndroidMode() {
     // Coloque aqui o código para ativar o modo Android
     alert('Modo Android ativado');
@@ -32,20 +48,9 @@ function enableAndroidMode() {
     }
 }
 
-// Função para ativar o modo Desktop
-function enableDesktopMode() {
-    // Coloque aqui o código para ativar o modo Desktop
-    alert('Modo Desktop ativado');
-}
-
 // Botão "Modo Desktop" - Ativa o modo Desktop
 document.getElementById('desktopButton').addEventListener('click', () => {
     enableDesktopMode();
-});
-
-// Botão "Modo Android" - Ativa o modo Android e orientação paisagem
-document.getElementById('androidButton').addEventListener('click', () => {
-    enableAndroidMode();
 });
 
 // Fecha o menu quando o usuário clica fora dele
