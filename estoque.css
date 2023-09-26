@@ -28,7 +28,8 @@ header {
 }
 
 .logo img {
-    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+    max-width: 200px; /* Define a largura máxima da logo */
+    width: 100%; /* Garante que a logo não ultrapasse a largura do cabeçalho */
 }
 
 .menu {
@@ -83,7 +84,7 @@ th {
     background-color: #f2f2f2;
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
+    text-align: center; /* Centraliza o texto no cabeçalho */
     font-weight: bold; /* Isso deixa o cabeçalho em negrito */
 }
 
@@ -91,17 +92,12 @@ th {
 td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
+    text-align: center; /* Centraliza o texto nas células de dados */
 }
 
 /* Estilizando as linhas alternadas */
 tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-/* Estilizando o hover nas células da tabela */
-tr:hover {
-    background-color: #ddd;
 }
 
 /* Estilizando o hover nas células da tabela */
@@ -120,6 +116,7 @@ tr:hover th {
     background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
     color: #000000; /* Altera a cor do texto para preto */
 }
+
 h1 {
     text-align: center; /* Centraliza horizontalmente */
     color: #007190; /* Cor do texto (azul) */
