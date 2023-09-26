@@ -124,3 +124,25 @@ h1 {
     text-align: center; /* Centraliza horizontalmente */
     color: #007190; /* Cor do texto (azul) */
 }
+/* Estilo para cada cartão de informação */
+.info-card {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o conteúdo das informações */
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os dados das informações */
+.info-content span {
+    flex: 1;
+}

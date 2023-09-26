@@ -28,40 +28,77 @@
     </header>
 </body>
 
-    <main>
-        <table>
-            <tr>
-                <th style="color: rgb(0, 113, 143); border-radius: 5px 0 0 0;">LINHA</th>
-                <th style="color: rgb(0, 113, 143); border-radius: 0 5px 0 0;">CÓDIGO</th>
-                <th style="color: rgb(0, 113, 143); border-radius: 0;">DESCRIÇÃO</th>
-                <th style="color: rgb(255, 0, 0); border-radius: 0 0 0 5px;">TOTAL ESTOQUE</th>
-                <th style="color: rgb(0, 113, 143); border-radius: 0 0 5px 0;">UND</th>
-            </tr>
-            <tr>
-                <td>STRETCH</td>
-                <td>30.20.40.01.0003</td>
-                <td>STRETCH MANUGREEN PLUS 3" 500 BRANCO (23,1KG) TUB. PAPEL</td>
-                <td class="editable-cell" id="quantity-estoque1" onclick="editQuantity(1)">80</td>
-                <td>BOB</td>
-            </tr>
-            <tr>
-                <td>STRETCH</td>
-                <td>30.20.40.01.0001</td>
-                <td>STRETCH MANUGREEN PLUS 3" 750 BRANCO (28KG) TUB. PAPEL</td>
-                <td class="editable-cell" id="quantity-estoque2" onclick="editQuantity(2)">846</td>
-                <td>BOB</td>
-                
-            </tr>
-            <tr>
-                <td>STRETCH</td>
-                <td>60.14.01.02.0009</td>
-                <td>STC AGRINET ESPECIAL SILAGEM 3" 1250MMX3000M BR/AZ/PR</td>
-                <td class="editable-cell" id="quantity-estoque3" onclick="editQuantity(3)">14</td>
-                <td>BOB</td>
-            </tr>
-        </table>
+<main>
+    <div class="info-card">
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">LINHA:</span>
+            <span>STRETCH</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">CÓDIGO:</span>
+            <span>30.20.40.01.0003</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">DESCRIÇÃO:</span>
+            <span>STRETCH MANUGREEN PLUS 3" 500 BRANCO (23,1KG) TUB. PAPEL</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(255, 0, 0); font-weight: bold;">TOTAL ESTOQUE:</span>
+            <span class="editable-cell" id="quantity-estoque1" onclick="editQuantity(1)">80</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">UND:</span>
+            <span>BOB</span>
+        </div>
     </div>
-    </main>
+
+    <div class="info-card">
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">LINHA:</span>
+            <span>STRETCH</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">CÓDIGO:</span>
+            <span>30.20.40.01.0001</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">DESCRIÇÃO:</span>
+            <span>STRETCH MANUGREEN PLUS 3" 750 BRANCO (28KG) TUB. PAPEL</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(255, 0, 0); font-weight: bold;">TOTAL ESTOQUE:</span>
+            <span class="editable-cell" id="quantity-estoque2" onclick="editQuantity(2)">846</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">UND:</span>
+            <span>BOB</span>
+        </div>
+    </div>
+
+    <div class="info-card">
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">LINHA:</span>
+            <span>STRETCH</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">CÓDIGO:</span>
+            <span>60.14.01.02.0009</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">DESCRIÇÃO:</span>
+            <span>STC AGRINET ESPECIAL SILAGEM 3" 1250MMX3000M BR/AZ/PR</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(255, 0, 0); font-weight: bold;">TOTAL ESTOQUE:</span>
+            <span class="editable-cell" id="quantity-estoque3" onclick="editQuantity(3)">14</span>
+        </div>
+        <div class="info-content">
+            <span style="color: rgb(0, 113, 143); font-weight: bold;">UND:</span>
+            <span>BOB</span>
+        </div>
+    </div>
+</main>
+
     
     <script src="estoque.js"></script>
 </body>
