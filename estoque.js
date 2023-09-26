@@ -32,16 +32,21 @@ function enableAndroidMode() {
     }
 }
 
-// Função para ativar o modo Desktop
-function enableDesktopMode() {
-    // Coloque aqui o código para ativar o modo Desktop
-    alert('Modo Desktop ativado');
-}
+// Função para ativar o modo Android
+function enableAndroidMode() {
+    // Coloque aqui o código para ativar o modo Android
+    alert('Modo Android ativado');
+    
+    // Verificar se estamos em um dispositivo Android
+    const isAndroid = /Android/i.test(navigator.userAgent);
 
-// Botão "Modo Android" - Ativa o modo Android
-document.getElementById('androidButton').addEventListener('click', () => {
-    enableAndroidMode();
-});
+    if (isAndroid) {
+        // Ativar a orientação paisagem se estiver no modo Android
+        screen.orientation.lock('landscape').catch(error => {
+            console.error('Erro ao definir a orientação:', error);
+        });
+    }
+}
 
 // Botão "Modo Desktop" - Ativa o modo Desktop
 document.getElementById('desktopButton').addEventListener('click', () => {

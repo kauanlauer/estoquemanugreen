@@ -295,3 +295,20 @@ th, td {
 .mode-button:hover {
     background-color: #00556b;
 }
+@media (max-width: 768px) {
+    /* Estilos para telas menores */
+    /* Por exemplo, você pode reduzir o tamanho da fonte, ajustar margens e tamanhos de elementos, etc. */
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    th, td {
+        width: 100%;
+        display: block;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Estilizando as células do cabeçalho para dispositivos móveis */
+    th {
+        text-align: center;
+    }
+}
