@@ -42,7 +42,6 @@ header {
     transition: left 0.3s ease-in-out;
 }
 
-
 .menu ul {
     list-style: none;
     padding: 0;
@@ -69,6 +68,7 @@ header {
     padding: 20px;
     transition: margin-left 0.3s ease-in-out;
 }
+
 /* Estilizando a tabela */
 table {
     border-collapse: collapse;
@@ -76,37 +76,36 @@ table {
     border: 2px solid #ddd;
     font-size: 16px;
     overflow-x: auto; /* Adicione rolagem horizontal quando necessário */
-  }
-  
-  /* Estilizando as células do cabeçalho */
-  th {
+}
+
+/* Estilizando as células do cabeçalho */
+th {
     background-color: #f2f2f2;
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-  }
-  
-  /* Estilizando as células de dados */
-  td {
+    font-weight: bold; /* Isso deixa o cabeçalho em negrito */
+    white-space: nowrap; /* Impede que o texto seja quebrado e ajusta as colunas ao tamanho do texto */
+}
+
+/* Estilizando as células de dados */
+td {
     border: 1px solid #ddd;
     padding: 10px;
-  }
-  
-  /* Estilizando as linhas alternadas */
-  tr:nth-child(even) {
+    white-space: nowrap; /* Impede que o texto seja quebrado e ajusta as colunas ao tamanho do texto */
+}
+
+/* Estilizando as linhas alternadas */
+tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-  
-  /* Estilizando as células de cabeçalho em negrito */
-  th {
-    font-weight: bold;
-  }
-  
-  /* Estilizando o hover nas células da tabela */
-  tr:hover {
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
     background-color: #ddd;
-  }
-  /* Estilos para tornar a tabela responsiva */
+}
+
+/* Estilos para tornar a tabela responsiva */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -116,11 +115,104 @@ table {
     overflow-x: auto;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+/* Estilizando a tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
 }
 
-th, td {
+/* Estilizando as células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
+    text-align: center;
+    font-weight: bold;
+    white-space: normal;
+}
+
+/* Estilizando as células de dados */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    white-space: normal;
+}
+
+/* Define as larguras das colunas */
+th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* Largura da coluna LINHA */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 10%; /* Largura da coluna CÓDIGO */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* Largura da coluna DESCRIÇÃO */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 10%; /* Largura da coluna QUANTIDADE TOTAL EM ESTOQUE */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 5%; /* Largura da coluna UNID */
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 10%; /* Largura da coluna PESO FILME */
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 10%; /* Largura da coluna PESO TUBETE */
+}
+
+th:nth-child(8), td:nth-child(8) {
+    width: 10%; /* Largura da coluna PESO TOTAL BOBINA */
+}
+
+th:nth-child(9), td:nth-child(9) {
+    width: 10%; /* Largura da coluna BOBINAS POR PISO */
+}
+
+th:nth-child(10), td:nth-child(10) {
+    width: 10%; /* Largura da coluna ALTURA PISO PALLET */
+}
+
+th:nth-child(11), td:nth-child(11) {
+    width: 10%; /* Largura da coluna ALTURA MÁXIMA PALLET */
+}
+
+th:nth-child(12), td:nth-child(12) {
+    width: 10%; /* Largura da coluna BOBINAS TOTAL PALLET */
+}
+
+/* Estilizando as linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #ddd;
+}
+/* Resto do seu CSS ... */
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #7bfa05b9; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Estilizando as células quando o mouse passa por cima */
+tr:hover td {
+    background-color: transparent; /* Define as células para transparente */
+    color: #000000; /* Altera a cor do texto para preto */
+}
+
+/* Estilizando as células de cabeçalho quando o mouse passa por cima */
+tr:hover th {
+    background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
+    color: #000000; /* Altera a cor do texto para preto */
 }
