@@ -1,0 +1,145 @@
+/* Estilos para a página de informações (info.css) */
+body {
+    background-color: #f5f5f5; /* Fundo levemente cinza para destacar a tabela */
+    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
+    color: #333; /* Cor do texto padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #007190; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Alinha os itens horizontalmente */
+}
+
+.menu-button {
+    background-color: transparent; /* Botão sem fundo */
+    border: none; /* Remove a borda */
+    cursor: pointer;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #fff; /* Cor do ícone do menu */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.logo img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-right: 20px; /* Espaço à direita da logo */
+}
+
+.menu {
+    background-color: #007190; /* Cor de fundo do menu lateral */
+    color: #fff; /* Cor do texto no menu */
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido */
+    transition: left 0.3s ease-in-out;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #00546b; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+.main {
+    margin-left: 250px; /* Deixe espaço para o menu lateral */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Estilos para a tabela de informações */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd; /* Adicione uma borda leve à tabela */
+    font-size: 16px;
+    background-color: #fff; /* Cor de fundo da tabela */
+    margin-top: 20px; /* Espaço acima da tabela */
+}
+
+th {
+    background-color: #007190; /* Cor de fundo do cabeçalho da tabela */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ddd; /* Borda leve para as células */
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas alternadas */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Cor de fundo quando o mouse passa por cima */
+}
+
+tr:hover td {
+    background-color: transparent;
+    color: #333; /* Altera a cor do texto para preto quando o mouse passa por cima */
+}
+
+tr:hover th {
+    background-color: #00546b; /* Cor de fundo do cabeçalho quando o mouse passa por cima */
+}
+
+h1 {
+    text-align: center;
+    color: #007190;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estilize os dados das bobinas e configurações do pallet */
+.data-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.data-title {
+    font-size: 20px;
+    color: #007190;
+    margin-bottom: 10px;
+}
+
+.data-item {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
