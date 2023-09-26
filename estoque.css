@@ -216,3 +216,7 @@ tr:hover th {
     background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
     color: #000000; /* Altera a cor do texto para preto */
 }
+h1 {
+    text-align: center; /* Centraliza horizontalmente */
+    color: #007190; /* Cor do texto (azul) */
+}
