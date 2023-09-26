@@ -1,9 +1,9 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
 const mainContent = document.querySelector('main');
-const menuIcon = document.getElementById('menu-icon'); // Adicione um ID para o ícone de menu
+const menuIcon = document.getElementById('menu-icon');
 
-let menuOpen = false; // Adicione uma variável para rastrear o estado do menu
+let menuOpen = false;
 
 menuButton.addEventListener('click', () => {
     if (!menuOpen) {
@@ -14,6 +14,38 @@ menuButton.addEventListener('click', () => {
         mainContent.style.marginLeft = '0px';
     }
     menuOpen = !menuOpen; // Inverte o estado do menu
+});
+
+// Função para ativar o modo Android
+function enableAndroidMode() {
+    // Coloque aqui o código para ativar o modo Android
+    alert('Modo Android ativado');
+    
+    // Verificar se estamos em um dispositivo Android
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    if (isAndroid) {
+        // Ativar a orientação retrato se estiver no modo Android
+        screen.orientation.lock('portrait').catch(error => {
+            console.error('Erro ao definir a orientação:', error);
+        });
+    }
+}
+
+// Função para ativar o modo Desktop
+function enableDesktopMode() {
+    // Coloque aqui o código para ativar o modo Desktop
+    alert('Modo Desktop ativado');
+}
+
+// Botão "Modo Android" - Ativa o modo Android
+document.getElementById('androidButton').addEventListener('click', () => {
+    enableAndroidMode();
+});
+
+// Botão "Modo Desktop" - Ativa o modo Desktop
+document.getElementById('desktopButton').addEventListener('click', () => {
+    enableDesktopMode();
 });
 
 // Fecha o menu quando o usuário clica fora dele
