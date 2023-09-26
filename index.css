@@ -223,18 +223,33 @@ footer {
 .slideshow-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .slide {
-    display: none; /* Inicialmente, oculta todos os slides */
-    text-align: center; /* Centraliza o conteúdo do slide */
-    max-width: 600px; /* Define a largura máxima para os slides */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: none;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f2f2f2; /* Cor de fundo dos slides */
+    background-color: transparent; /* Fundo transparente */
     border-radius: 8px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de sombra no texto do slide */
+.slide p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação de fade-in/fade-out */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }

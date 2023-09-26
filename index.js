@@ -1,3 +1,4 @@
+// Adicione este código no seu arquivo index.js
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
 const mainContent = document.querySelector('main');
@@ -29,34 +30,49 @@ document.addEventListener('click', (event) => {
 menu.addEventListener('click', (event) => {
     event.stopPropagation();
 });
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
 
-function showSlide(n) {
-    slides.forEach(slide => {
-        slide.style.display = "none";
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function typeText(textElement) {
+    const text = textElement.innerText;
+    textElement.innerText = '';
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            textElement.innerText += text.charAt(index);
+            index++;
+            setTimeout(type, 50); // Velocidade da digitação (ajuste conforme desejado)
+        }
+    }
+
+    type();
+}
+
+function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+        if (index === slideIndex) {
+            slide.style.display = 'block';
+            const typingTextElements = slide.querySelectorAll('.typing-text');
+            typingTextElements.forEach(typeText);
+        } else {
+            slide.style.display = 'none';
+        }
     });
+}
 
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    } else if (n >= slides.length) {
-        slideIndex = 0;
+function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
     }
-
-    slides[slideIndex].style.display = "block";
-    slideIndex++;
-
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    }
+    showSlide(currentSlide);
 }
 
 function startSlideshow() {
-    setInterval(() => {
-        showSlide(slideIndex);
-    }, 5000); // Altere o intervalo para a transição automática dos slides (em milissegundos)
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); // Muda de slide a cada 5 segundos
 }
 
-// Inicialize o slideshow
 startSlideshow();
-

@@ -27,25 +27,25 @@
     </header>
     <div class="slideshow-container">
         <div class="slide">
-            <h2>STRETCH</h2>
-            <p>CÓDIGO: 30.20.40.01.0003</p>
-            <p>DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 500 BRANCO (23,1KG) TUB. PAPEL</p>
-            <p>TOTAL ESTOQUE: 80</p>
-            <p>UND: BOB</p>
+            <p class="typing-text">STRETCH</p>
+            <p class="typing-text">CÓDIGO: 30.20.40.01.0003</p>
+            <p class="typing-text">DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 500 BRANCO (23,1KG) TUB. PAPEL</p>
+            <p class="typing-text">TOTAL ESTOQUE: 80</p>
+            <p class="typing-text">UND: BOB</p>
         </div>
         <div class="slide">
-            <h2>STRETCH</h2>
-            <p>CÓDIGO: 30.20.40.01.0001</p>
-            <p>DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 750 BRANCO (28KG) TUB. PAPEL</p>
-            <p>TOTAL ESTOQUE: 846</p>
-            <p>UND: BOB</p>
+            <p class="typing-text">STRETCH</p>
+            <p class="typing-text">CÓDIGO: 30.20.40.01.0001</p>
+            <p class="typing-text">DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 750 BRANCO (28KG) TUB. PAPEL</p>
+            <p class="typing-text">TOTAL ESTOQUE: 846</p>
+            <p class="typing-text">UND: BOB</p>
         </div>
         <div class="slide">
-            <h2>STRETCH</h2>
-            <p>CÓDIGO: 60.14.01.02.0009</p>
-            <p>DESCRIÇÃO: STC AGRINET ESPECIAL SILAGEM 3" 1250MMX3000M BR/AZ/PR</p>
-            <p>TOTAL ESTOQUE: 14</p>
-            <p>UND: BOB</p>
+            <p class="typing-text">STRETCH</p>
+            <p class="typing-text">CÓDIGO: 60.14.01.02.0009</p>
+            <p class="typing-text">DESCRIÇÃO: STC AGRINET ESPECIAL SILAGEM 3" 1250MMX3000M BR/AZ/PR</p>
+            <p class="typing-text">TOTAL ESTOQUE: 14</p>
+            <p class="typing-text">UND: BOB</p>
         </div>
     </div>
     <main>
@@ -60,35 +60,5 @@
         </div>
     </footer>
     <script src="index.js"></script>
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-    
-        function showSlide(slideIndex) {
-            slides.forEach((slide, index) => {
-                if (index === slideIndex) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-    
-        function nextSlide() {
-            currentSlide++;
-            if (currentSlide >= slides.length) {
-                currentSlide = 0;
-            }
-            showSlide(currentSlide);
-        }
-    
-        function startSlideshow() {
-            showSlide(currentSlide);
-            setInterval(nextSlide, 5000); // Muda de slide a cada 5 segundos
-        }
-    
-        startSlideshow();
-    </script>
-    
 </body>
 </html>
