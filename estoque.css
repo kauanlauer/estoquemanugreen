@@ -146,11 +146,11 @@ th:nth-child(1), td:nth-child(1) {
 }
 
 th:nth-child(2), td:nth-child(2) {
-    width: 10%; /* Largura da coluna CÓDIGO */
+    width: 15%; /* Largura da coluna CÓDIGO */
 }
 
 th:nth-child(3), td:nth-child(3) {
-    width: 30%; /* Largura da coluna DESCRIÇÃO */
+    width: 25%; /* Largura da coluna DESCRIÇÃO */
 }
 
 th:nth-child(4), td:nth-child(4) {
@@ -162,27 +162,27 @@ th:nth-child(5), td:nth-child(5) {
 }
 
 th:nth-child(6), td:nth-child(6) {
-    width: 10%; /* Largura da coluna PESO FILME */
+    width: 8%; /* Largura da coluna PESO FILME */
 }
 
 th:nth-child(7), td:nth-child(7) {
-    width: 10%; /* Largura da coluna PESO TUBETE */
+    width: 8%; /* Largura da coluna PESO TUBETE */
 }
 
 th:nth-child(8), td:nth-child(8) {
-    width: 10%; /* Largura da coluna PESO TOTAL BOBINA */
+    width: 8%; /* Largura da coluna PESO TOTAL BOBINA */
 }
 
 th:nth-child(9), td:nth-child(9) {
-    width: 10%; /* Largura da coluna BOBINAS POR PISO */
+    width: 8%; /* Largura da coluna BOBINAS POR PISO */
 }
 
 th:nth-child(10), td:nth-child(10) {
-    width: 10%; /* Largura da coluna ALTURA PISO PALLET */
+    width: 8%; /* Largura da coluna ALTURA PISO PALLET */
 }
 
 th:nth-child(11), td:nth-child(11) {
-    width: 10%; /* Largura da coluna ALTURA MÁXIMA PALLET */
+    width: 8%; /* Largura da coluna ALTURA MÁXIMA PALLET */
 }
 
 th:nth-child(12), td:nth-child(12) {
