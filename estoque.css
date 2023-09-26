@@ -257,3 +257,29 @@ td {
         text-align: center;
     }
 }
+/* Estilos para tornar a tabela responsiva */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Esconda algumas colunas em telas menores */
+@media (max-width: 768px) {
+    th:nth-child(4), td:nth-child(4), /* TOTAL ESTOQUE */
+    th:nth-child(5), td:nth-child(5), /* UND */
+    th:nth-child(6), td:nth-child(6), /* PESO FILME */
+    th:nth-child(7), td:nth-child(7), /* PESO TUBETE */
+    th:nth-child(8), td:nth-child(8), /* PESO TOTAL BOBINA */
+    th:nth-child(9), td:nth-child(9), /* BOBINAS POR PISO */
+    th:nth-child(10), td:nth-child(10), /* ALTURA PISO PALLET */
+    th:nth-child(11), td:nth-child(11), /* ALTURA MÁX PALLET */
+    th:nth-child(12), td:nth-child(12) /* BOBINAS POR PALLET */ {
+        display: none;
+    }
+}
