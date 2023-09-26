@@ -1,19 +1,19 @@
-/* Estilos para a página de informações (info.css) */
-body {
-    background-color: #f5f5f5; /* Fundo levemente cinza para destacar a tabela */
-    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
-    color: #333; /* Cor do texto padrão */
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, ul, li, th, td {
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para o cabeçalho */
+body {
+    background-color: #fff; /* Fundo branco */
+    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
+}
+
 header {
-    background-color: #007190; /* Cor de fundo do cabeçalho */
+    background-color: rgba(0, 114, 145, 0.8); /* Cor de fundo do menu lateral com 70% de opacidade */
     padding: 20px;
     display: flex;
     align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: space-between; /* Alinha os itens horizontalmente */
 }
 
 .menu-button {
@@ -27,18 +27,12 @@ header {
     color: #fff; /* Cor do ícone do menu */
 }
 
-.logo {
-    display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
-}
-
 .logo img {
     width: 200px; /* Ajuste o tamanho da logo conforme necessário */
-    margin-right: 20px; /* Espaço à direita da logo */
 }
 
 .menu {
-    background-color: #007190; /* Cor de fundo do menu lateral */
+    background-color: rgba(0, 114, 145, 0.9); /* Cor de fundo do menu lateral com 70% de opacidade */
     color: #fff; /* Cor do texto no menu */
     width: 250px;
     height: 100%;
@@ -66,80 +60,89 @@ header {
 }
 
 .menu ul li a:hover {
-    background-color: #00546b; /* Cor de fundo ao passar o mouse */
+    background-color: #444; /* Cor de fundo ao passar o mouse */
 }
 
-/* Estilos para o conteúdo principal */
 .main {
     margin-left: 250px; /* Deixe espaço para o menu lateral */
     padding: 20px;
     transition: margin-left 0.3s ease-in-out;
 }
 
-/* Estilos para a tabela de informações */
+/* Estilizando a tabela */
 table {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #ddd; /* Adicione uma borda leve à tabela */
+    border: 2px solid #ddd;
     font-size: 16px;
-    background-color: #fff; /* Cor de fundo da tabela */
-    margin-top: 20px; /* Espaço acima da tabela */
+    overflow-x: auto; /* Adicione rolagem horizontal quando necessário */
 }
 
+/* Estilizando as células do cabeçalho */
 th {
-    background-color: #007190; /* Cor de fundo do cabeçalho da tabela */
-    color: #fff; /* Cor do texto do cabeçalho */
-    padding: 12px;
-    text-align: left;
-    font-weight: bold;
-}
-
-td {
-    border: 1px solid #ddd; /* Borda leve para as células */
-    padding: 12px;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2; /* Cor de fundo das linhas alternadas */
-}
-
-tr:hover {
-    background-color: #e0e0e0; /* Cor de fundo quando o mouse passa por cima */
-}
-
-tr:hover td {
-    background-color: transparent;
-    color: #333; /* Altera a cor do texto para preto quando o mouse passa por cima */
-}
-
-tr:hover th {
-    background-color: #00546b; /* Cor de fundo do cabeçalho quando o mouse passa por cima */
-}
-
-h1 {
-    text-align: center;
-    color: #007190;
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-}
-
-/* Estilize os dados das bobinas e configurações do pallet */
-.data-section {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #f2f2f2;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold; /* Isso deixa o cabeçalho em negrito */
 }
 
-.data-title {
-    font-size: 20px;
-    color: #007190;
+/* Estilizando as células de dados */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilizando as linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #7bfa05b9; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Estilizando as células quando o mouse passa por cima */
+tr:hover td {
+    background-color: transparent; /* Define as células para transparente */
+    color: #000000; /* Altera a cor do texto para preto */
+}
+
+/* Estilizando as células de cabeçalho quando o mouse passa por cima */
+tr:hover th {
+    background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
+    color: #000000; /* Altera a cor do texto para preto */
+}
+h1 {
+    text-align: center; /* Centraliza horizontalmente */
+    color: #007190; /* Cor do texto (azul) */
+}
+/* Estilo para cada cartão de informação */
+.info-card {
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Estilo para os títulos dos materiais */
+.info-card strong {
+    font-size: 18px;
+    color: #007190; /* Cor azul */
     margin-bottom: 10px;
 }
 
-.data-item {
+/* Estilo para as informações sobre os materiais */
+.info-card p {
+    margin: 5px 0;
     font-size: 16px;
-    color: #333;
-    margin-bottom: 8px;
+    color: #333; /* Cor de texto padrão */
 }
