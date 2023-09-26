@@ -220,3 +220,40 @@ h1 {
     text-align: center; /* Centraliza horizontalmente */
     color: #007190; /* Cor do texto (azul) */
 }
+ /* Estilos para tornar a tabela responsiva */
+ table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px; /* Espaçamento inferior para dispositivos móveis */
+}
+
+/* Estilizando as células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    white-space: normal;
+}
+
+/* Estilizando as células de dados */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    white-space: normal;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    th, td {
+        width: 100%;
+        display: block;
+    }
+
+    /* Estilizando as células do cabeçalho para dispositivos móveis */
+    th {
+        text-align: center;
+    }
+}
