@@ -1,0 +1,240 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, ul, li, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff; /* Fundo branco */
+    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
+}
+
+header {
+    background-color: rgba(0, 114, 145, 0.8); /* Cor de fundo do menu lateral com 70% de opacidade */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.menu-button {
+    background-color: transparent; /* Botão sem fundo */
+    border: none; /* Remove a borda */
+    cursor: pointer;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #fff; /* Cor do ícone do menu */
+}
+
+.logo img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+.menu {
+    background-color: rgba(0, 114, 145, 0.9); /* Cor de fundo do menu lateral com 70% de opacidade */
+    color: #fff; /* Cor do texto no menu */
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido */
+    transition: left 0.3s ease-in-out;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #444; /* Cor de fundo ao passar o mouse */
+}
+
+.main {
+    margin-left: 250px; /* Deixe espaço para o menu lateral */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Estilizando a tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    overflow-x: auto; /* Adicione rolagem horizontal quando necessário */
+}
+
+/* Estilizando as células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold; /* Isso deixa o cabeçalho em negrito */
+}
+
+/* Estilizando as células de dados */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilizando as linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilizando o hover nas células da tabela */
+tr:hover {
+    background-color: #7bfa05b9; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Estilizando as células quando o mouse passa por cima */
+tr:hover td {
+    background-color: transparent; /* Define as células para transparente */
+    color: #000000; /* Altera a cor do texto para preto */
+}
+
+/* Estilizando as células de cabeçalho quando o mouse passa por cima */
+tr:hover th {
+    background-color: #ddd; /* Cor de fundo quando o mouse passa por cima */
+    color: #000000; /* Altera a cor do texto para preto */
+}
+h1 {
+    text-align: center; /* Centraliza horizontalmente */
+    color: #007190; /* Cor do texto (azul) */
+}
+/* Estilo para cada cartão de informação */
+.info-card {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o conteúdo das informações */
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Reduzido o espaçamento entre as informações */
+}
+
+/* Estilo para os dados das informações */
+.info-content span {
+    flex: 1;
+}
+/* Estilos para o rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 20px;
+}
+
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-link p {
+    margin-left: 10px; /* Espaçamento entre o logotipo e o texto */
+    font-size: 16px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+}
+
+.whatsapp-link a img {
+    width: 50px; /* Ajuste o tamanho do logotipo conforme necessário */
+    height: auto;
+}
+/* Estilos para os slides */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 10px;
+}
+/* Estilo para os slides */
+.slide {
+    display: none;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente na metade da tela */
+    left: 50%; /* Centraliza horizontalmente na metade da tela */
+    transform: translate(-50%, -50%); /* Centraliza o slide com base no seu tamanho */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Largura máxima do slide */
+    animation: fade 5s infinite; /* Aplica uma animação de fade de 5 segundos */
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0; } /* O slide estará invisível no início e no final */
+    10%, 90% { opacity: 1; } /* O slide estará visível durante a maior parte do tempo */
+}
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+}
+
+.slide {
+    display: none; /* Inicialmente, oculta todos os slides */
+    text-align: center; /* Centraliza o conteúdo do slide */
+    max-width: 600px; /* Define a largura máxima para os slides */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #f2f2f2; /* Cor de fundo dos slides */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+}

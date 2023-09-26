@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Estoque Linha Agrícola</title>
 </head>
 <body>
     <header>
-        <button class="menu-button">
+        <button class="menu-button menu-button-text">
             <span id="menu-icon">&#9776;</span>
-        </button>
+        </button>        
         <div class="logo">
             <img src="logobrbr.png" alt="Logo do site">
         </div>
@@ -25,9 +25,70 @@
             </ul>
         </nav>
     </header>
+    <div class="slideshow-container">
+        <div class="slide">
+            <h2>STRETCH</h2>
+            <p>CÓDIGO: 30.20.40.01.0003</p>
+            <p>DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 500 BRANCO (23,1KG) TUB. PAPEL</p>
+            <p>TOTAL ESTOQUE: 80</p>
+            <p>UND: BOB</p>
+        </div>
+        <div class="slide">
+            <h2>STRETCH</h2>
+            <p>CÓDIGO: 30.20.40.01.0001</p>
+            <p>DESCRIÇÃO: STRETCH MANUGREEN PLUS 3" 750 BRANCO (28KG) TUB. PAPEL</p>
+            <p>TOTAL ESTOQUE: 846</p>
+            <p>UND: BOB</p>
+        </div>
+        <div class="slide">
+            <h2>STRETCH</h2>
+            <p>CÓDIGO: 60.14.01.02.0009</p>
+            <p>DESCRIÇÃO: STC AGRINET ESPECIAL SILAGEM 3" 1250MMX3000M BR/AZ/PR</p>
+            <p>TOTAL ESTOQUE: 14</p>
+            <p>UND: BOB</p>
+        </div>
+    </div>
     <main>
-        <!-- Conteúdo do site vai aqui -->
+       
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <div class="whatsapp-link">
+            <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank">
+                <img src="wt.png" alt="WhatsApp">
+            </a>
+            <p>Entre em contato via WhatsApp</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+    
+        function showSlide(slideIndex) {
+            slides.forEach((slide, index) => {
+                if (index === slideIndex) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+    
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+    
+        function startSlideshow() {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 5000); // Muda de slide a cada 5 segundos
+        }
+    
+        startSlideshow();
+    </script>
+    
 </body>
 </html>
